@@ -1,0 +1,45 @@
+.figure{
+    width: 416px;
+    height: 301px;
+    position: relative;
+    &__cart{
+        position: absolute;
+        bottom: 0;
+        cursor: pointer;
+        height: 300px;
+        
+        /*width: 416px;
+        height: 200px;*/
+    }
+
+    &__openAll{
+        display: none;
+    }
+
+    &__open{
+        position: absolute;
+        height: 301px;
+        bottom: 0;
+    }
+    
+}
+
+.temblor{
+    &:hover{
+        animation: temblor .9s infinite .5s;
+    }
+}
+
+@keyframes temblor {
+    0%{transform: rotate(0deg);}
+    10%{transform: rotate(2deg);}
+    20%{transform: rotate(0deg);}
+    30%{transform: rotate(-2deg);}
+    40%{transform: rotate(0deg);}
+    50%{transform: rotate(2deg);}
+    60%{transform: rotate(0deg);}
+    70%{transform: rotate(-2deg);}
+    80%{transform: rotate(0deg);}
+    90%{transform: rotate(2deg);}
+    100%{transform: rotate(0deg);}
+}

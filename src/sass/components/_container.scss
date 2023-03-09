@@ -1,0 +1,138 @@
+@use '../abstract/typography' as *;
+
+.container{
+    width: 210px;
+    height: 220px;
+    //background-color: blue;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    &__container-g{
+        background-color: #EDBDE7;
+        width: 40px;
+        text-align: center;
+        padding-top: 5px;
+        transition: transform .5s;
+        height: 150px;
+        cursor: pointer;
+
+        &:hover{
+            transform: translateY(-10%);
+        }
+    }
+
+    &__g{
+        font-family: $font;
+        color: white;
+        font-size: 25px;
+    }
+
+    &__container-i{
+        background-color: #9F7FB1;
+        width: 40px;
+        margin-top: 30px;
+        text-align: center;
+        padding-top: 5px;
+        cursor: pointer;
+        transition: transform .5s;
+        height: 150px;
+        &:hover{
+            transform: translateY(-10%);
+        }
+    }
+    &__i{
+        font-family: $font;
+        color: white;
+        font-size: 25px;
+    }
+
+    &__container-r{
+        background-color: #E892BF;
+        width: 40px;
+        text-align: center;
+        padding-top: 5px;
+        cursor: pointer;
+        transition: transform .5s;
+        height: 150px;
+        &:hover{
+            transform: translateY(-10%);
+        }
+    }
+
+    &__r{
+        font-family: $font;
+        color: white;
+        font-size: 25px;
+    }
+
+    &__container-l{
+        background-color: #FFC9D9;
+        width: 40px;
+        margin-top: 30px;
+        text-align: center;
+        padding-top: 5px;
+        cursor: pointer;
+        transition: transform .5s;
+        height: 150px;
+        &:hover{
+            transform: translateY(-10%);
+        }
+    }
+
+    &__l{
+        font-family: $font;
+        color: white;
+        font-size: 25px;
+    }
+
+    &__resto{
+        font-family: $font;
+        color: white;
+        font-size: 25px;
+    }
+
+    &__description{
+        font-family: $font;
+        color: white;
+        font-size: 16px;
+        margin: 10px;
+        text-align: justify;
+    }
+
+    &__bot{
+        position: absolute;
+        width: 295px;
+        height: 280px;
+        background-color: #F6B8D5;
+        clip-path: polygon(50% 63.8%, 0% 100%, 100% 100%);
+        left: 50%;
+        bottom: -1%;
+        transform: translateX(-50%);
+    }
+    &__left{
+        position: absolute;
+        width: 289px;
+        height: 307px;
+        background-color: #F196BF;
+        //background-color: blue;
+        clip-path: polygon(0 36.3%, 0% 100%, 44% 72.1%);
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+    }
+    &__right{
+        position: absolute;
+        width: 289px;
+        height: 307px;
+        background-color: #F196BF;
+        clip-path: polygon(100% 36.3%, 100% 100%, 56% 72%);
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+    }
+}
